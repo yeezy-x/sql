@@ -60,3 +60,5 @@ SELECT c.client_name,COUNT(c.client_id) AS total_number_Orders
 FROM clients c
 LEFT JOIN orders_data o ON c.client_id = o.client_id
 GROUP BY c.client_id;
+
+

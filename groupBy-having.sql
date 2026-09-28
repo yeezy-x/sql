@@ -43,3 +43,7 @@ GROUP BY department
 HAVING COUNT(*) >= 4;
 
 select email, count(*) as dup_email_count from employees GROUP BY email HAVING dup_email_count>1
+
+## where before grouping and having after aggregation 
+## cannot not use agg functions in where
+## COUNT(col) only non null values 
